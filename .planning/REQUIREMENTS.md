@@ -105,52 +105,52 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| REPO-01 | — | Pending |
-| REPO-02 | — | Pending |
-| REPO-03 | — | Pending |
-| PRMT-01 | — | Pending |
-| PRMT-02 | — | Pending |
-| PRMT-03 | — | Pending |
-| PRMT-04 | — | Pending |
-| PRMT-05 | — | Pending |
-| SEED-01 | — | Pending |
-| SEED-02 | — | Pending |
-| SEED-03 | — | Pending |
-| SEED-04 | — | Pending |
-| SEED-05 | — | Pending |
-| BILD-01 | — | Pending |
-| BILD-02 | — | Pending |
-| BILD-03 | — | Pending |
-| BILD-04 | — | Pending |
-| BILD-05 | — | Pending |
-| BILD-06 | — | Pending |
-| BILD-07 | — | Pending |
-| BILD-08 | — | Pending |
-| BILD-09 | — | Pending |
-| BILD-10 | — | Pending |
-| BILD-11 | — | Pending |
-| JSON-01 | — | Pending |
-| JSON-02 | — | Pending |
-| JSON-03 | — | Pending |
-| SCHM-01 | — | Pending |
-| SCHM-02 | — | Pending |
-| CICD-01 | — | Pending |
-| CICD-02 | — | Pending |
-| CICD-03 | — | Pending |
-| CICD-04 | — | Pending |
-| CICD-05 | — | Pending |
-| DOCS-01 | — | Pending |
-| DOCS-02 | — | Pending |
-| DOCS-03 | — | Pending |
-| DOCS-04 | — | Pending |
-| DOCS-05 | — | Pending |
-| DOCS-06 | — | Pending |
+| REPO-01 | Phase 1 | Pending |
+| REPO-02 | Phase 1 | Pending |
+| REPO-03 | Phase 1 | Pending |
+| PRMT-01 | Phase 1 | Pending |
+| PRMT-02 | Phase 1 | Pending |
+| PRMT-03 | Phase 1 | Pending |
+| PRMT-04 | Phase 1 | Pending |
+| PRMT-05 | Phase 1 | Pending |
+| BILD-01 | Phase 1 | Pending |
+| BILD-02 | Phase 1 | Pending |
+| BILD-03 | Phase 1 | Pending |
+| BILD-04 | Phase 1 | Pending |
+| BILD-05 | Phase 1 | Pending |
+| BILD-06 | Phase 1 | Pending |
+| BILD-07 | Phase 1 | Pending |
+| BILD-08 | Phase 1 | Pending |
+| BILD-09 | Phase 1 | Pending |
+| BILD-10 | Phase 1 | Pending |
+| BILD-11 | Phase 1 | Pending |
+| JSON-01 | Phase 1 | Pending |
+| JSON-02 | Phase 1 | Pending |
+| JSON-03 | Phase 1 | Pending |
+| SCHM-01 | Phase 1 | Pending |
+| SCHM-02 | Phase 1 | Pending |
+| SEED-01 | Phase 2 | Pending |
+| SEED-02 | Phase 2 | Pending |
+| SEED-03 | Phase 2 | Pending |
+| SEED-04 | Phase 2 | Pending |
+| SEED-05 | Phase 2 | Pending |
+| CICD-01 | Phase 3 | Pending |
+| CICD-02 | Phase 3 | Pending |
+| CICD-03 | Phase 3 | Pending |
+| CICD-04 | Phase 3 | Pending |
+| CICD-05 | Phase 3 | Pending |
+| DOCS-01 | Phase 4 | Pending |
+| DOCS-02 | Phase 4 | Pending |
+| DOCS-03 | Phase 4 | Pending |
+| DOCS-04 | Phase 4 | Pending |
+| DOCS-05 | Phase 4 | Pending |
+| DOCS-06 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 40 total
-- Mapped to phases: 0
-- Unmapped: 40
+- Mapped to phases: 40
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-11*
-*Last updated: 2026-03-11 after initial definition*
+*Last updated: 2026-03-11 after roadmap creation*
