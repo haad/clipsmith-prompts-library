@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-build-foundation/01-01-PLAN.md
-last_updated: "2026-03-11T21:49:15.614Z"
+stopped_at: Completed 01-build-foundation/01-02-PLAN.md
+last_updated: "2026-03-11T21:53:45.637Z"
 last_activity: 2026-03-11 — Roadmap created
 progress:
   total_phases: 4
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
   percent: 0
 ---
 
@@ -51,6 +51,7 @@ Progress: [░░░░░░░░░░] 0%
 
 *Updated after each plan completion*
 | Phase 01-build-foundation P01 | 2 | 2 tasks | 7 files |
+| Phase 01-build-foundation P02 | 3 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -64,6 +65,7 @@ Recent decisions affecting current work:
 - [Phase 1]: Use `jq --arg` for all JSON-encoding of prompt content — only safe way to handle newlines, quotes, backslashes
 - [Phase 01-build-foundation]: prompts.json not gitignored — committed to main for PR review visibility
 - [Phase 01-build-foundation]: schema/prompt.schema.json uses additionalProperties:false on prompt items — Flycut Decodable rejects extra fields
+- [Phase 01-build-foundation]: || true required on grep field extractions under set -euo pipefail to emit proper error messages
 
 ### Pending Todos
 
@@ -76,6 +78,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-11T21:49:15.611Z
-Stopped at: Completed 01-build-foundation/01-01-PLAN.md
+Last session: 2026-03-11T21:53:45.635Z
+Stopped at: Completed 01-build-foundation/01-02-PLAN.md
 Resume file: None
