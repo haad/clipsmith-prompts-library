@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-11T15:35:23.363Z"
+stopped_at: Completed 01-build-foundation/01-01-PLAN.md
+last_updated: "2026-03-11T21:49:15.614Z"
 last_activity: 2026-03-11 — Roadmap created
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_plans: 2
+  completed_plans: 1
   percent: 0
 ---
 
@@ -50,6 +50,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01-build-foundation P01 | 2 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -61,6 +62,8 @@ Recent decisions affecting current work:
 - [Roadmap]: Coarse granularity applied — 4 phases derived from natural dependency chain (build → content → CI/CD → docs)
 - [Phase 1]: Build script must be macOS bash 3.2 compatible — no `declare -A`; use POSIX string + `grep -w` for duplicate ID detection
 - [Phase 1]: Use `jq --arg` for all JSON-encoding of prompt content — only safe way to handle newlines, quotes, backslashes
+- [Phase 01-build-foundation]: prompts.json not gitignored — committed to main for PR review visibility
+- [Phase 01-build-foundation]: schema/prompt.schema.json uses additionalProperties:false on prompt items — Flycut Decodable rejects extra fields
 
 ### Pending Todos
 
@@ -73,6 +76,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-11T15:35:23.361Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-build-foundation/01-CONTEXT.md
+Last session: 2026-03-11T21:49:15.611Z
+Stopped at: Completed 01-build-foundation/01-01-PLAN.md
+Resume file: None

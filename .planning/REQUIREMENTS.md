@@ -9,17 +9,17 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Repository Structure
 
-- [ ] **REPO-01**: Repository has `prompts/` directory with `coding/`, `writing/`, `analysis/`, `creative/` subdirectories
-- [ ] **REPO-02**: `catalog.yaml` defines catalog version and valid categories list
-- [ ] **REPO-03**: `.gitignore` excludes .DS_Store, swap files, and node_modules
+- [x] **REPO-01**: Repository has `prompts/` directory with `coding/`, `writing/`, `analysis/`, `creative/` subdirectories
+- [x] **REPO-02**: `catalog.yaml` defines catalog version and valid categories list
+- [x] **REPO-03**: `.gitignore` excludes .DS_Store, swap files, and node_modules
 
 ### Prompt Authoring
 
-- [ ] **PRMT-01**: Each prompt is a Markdown file with YAML frontmatter containing required `title` (string) and `version` (integer) fields
-- [ ] **PRMT-02**: Optional frontmatter fields supported: `category` (override), `description`, `tags`, `variables`
-- [ ] **PRMT-03**: Prompt `id` derived from filename (without `.md`), lowercase kebab-case, unique across all categories
-- [ ] **PRMT-04**: Category resolved from parent directory name, overridable via frontmatter `category` field
-- [ ] **PRMT-05**: Prompt content supports `{{clipboard}}` and custom `{{variable}}` template placeholders
+- [x] **PRMT-01**: Each prompt is a Markdown file with YAML frontmatter containing required `title` (string) and `version` (integer) fields
+- [x] **PRMT-02**: Optional frontmatter fields supported: `category` (override), `description`, `tags`, `variables`
+- [x] **PRMT-03**: Prompt `id` derived from filename (without `.md`), lowercase kebab-case, unique across all categories
+- [x] **PRMT-04**: Category resolved from parent directory name, overridable via frontmatter `category` field
+- [x] **PRMT-05**: Prompt content supports `{{clipboard}}` and custom `{{variable}}` template placeholders
 
 ### Seed Prompts
 
@@ -46,13 +46,13 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Output Format
 
 - [ ] **JSON-01**: `prompts.json` matches Flycut's `PromptCatalog` structure: `{version: Int, prompts: [PromptDTO]}`
-- [ ] **JSON-02**: Each prompt object has exactly 5 fields: `id`, `title`, `category`, `version`, `content` (no extras)
+- [x] **JSON-02**: Each prompt object has exactly 5 fields: `id`, `title`, `category`, `version`, `content` (no extras)
 - [ ] **JSON-03**: `prompts.json` validates against `schema/prompt.schema.json`
 
 ### Validation Schema
 
-- [ ] **SCHM-01**: `schema/prompt.schema.json` validates the complete prompts.json structure with JSON Schema draft 2020-12
-- [ ] **SCHM-02**: Schema enforces id pattern (`^[a-z0-9-]+$`), valid category enum, minimum version 1, non-empty strings
+- [x] **SCHM-01**: `schema/prompt.schema.json` validates the complete prompts.json structure with JSON Schema draft 2020-12
+- [x] **SCHM-02**: Schema enforces id pattern (`^[a-z0-9-]+$`), valid category enum, minimum version 1, non-empty strings
 
 ### CI/CD Pipeline
 
@@ -105,14 +105,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| REPO-01 | Phase 1 | Pending |
-| REPO-02 | Phase 1 | Pending |
-| REPO-03 | Phase 1 | Pending |
-| PRMT-01 | Phase 1 | Pending |
-| PRMT-02 | Phase 1 | Pending |
-| PRMT-03 | Phase 1 | Pending |
-| PRMT-04 | Phase 1 | Pending |
-| PRMT-05 | Phase 1 | Pending |
+| REPO-01 | Phase 1 | Complete |
+| REPO-02 | Phase 1 | Complete |
+| REPO-03 | Phase 1 | Complete |
+| PRMT-01 | Phase 1 | Complete |
+| PRMT-02 | Phase 1 | Complete |
+| PRMT-03 | Phase 1 | Complete |
+| PRMT-04 | Phase 1 | Complete |
+| PRMT-05 | Phase 1 | Complete |
 | BILD-01 | Phase 1 | Pending |
 | BILD-02 | Phase 1 | Pending |
 | BILD-03 | Phase 1 | Pending |
@@ -125,10 +125,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | BILD-10 | Phase 1 | Pending |
 | BILD-11 | Phase 1 | Pending |
 | JSON-01 | Phase 1 | Pending |
-| JSON-02 | Phase 1 | Pending |
+| JSON-02 | Phase 1 | Complete |
 | JSON-03 | Phase 1 | Pending |
-| SCHM-01 | Phase 1 | Pending |
-| SCHM-02 | Phase 1 | Pending |
+| SCHM-01 | Phase 1 | Complete |
+| SCHM-02 | Phase 1 | Complete |
 | SEED-01 | Phase 2 | Pending |
 | SEED-02 | Phase 2 | Pending |
 | SEED-03 | Phase 2 | Pending |
