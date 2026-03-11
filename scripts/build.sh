@@ -30,7 +30,7 @@ if [ -z "$CATALOG_VERSION" ]; then
     exit 1
 fi
 
-# Pass 1: Collect all IDs, detect duplicates (POSIX — no declare -A, bash 3.2 safe)
+# Pass 1: Collect all IDs, detect duplicates (POSIX string accumulation — bash 3.2 safe)
 ALL_IDS=""
 for file in $(find "$PROMPTS_DIR" -name '*.md' -type f | sort); do
     id=$(basename "$file" .md)
@@ -45,7 +45,7 @@ if [ -n "$DUPS" ]; then
 fi
 
 # Pass 2: Parse each file and build JSON objects
-declare -a PROMPT_JSONS=()   # declare -a (indexed) is bash 3.2 safe
+declare -a PROMPT_JSONS=()   # indexed array — bash 3.2 safe (only associative arrays require bash 4+)
 
 for file in $(find "$PROMPTS_DIR" -name '*.md' -type f | sort); do
     id=$(basename "$file" .md)
@@ -59,8 +59,8 @@ for file in $(find "$PROMPTS_DIR" -name '*.md' -type f | sort); do
     # sed 's/^title:[[:space:]]*//' handles "title: foo" and 'title: "foo: bar"'.
     # The second sed strips one layer of surrounding double-quotes, preserving any
     # colons or other characters inside the value (CONTEXT.md locked: colon-in-title support).
-    title=$(printf '%s\n' "$frontmatter" | grep '^title:' | sed 's/^title:[[:space:]]*//' | sed 's/^"\(.*\)"$/\1/')
-    version=$(printf '%s\n' "$frontmatter" | grep '^version:' | awk '{print $2}')
+    title=$(printf '%s\n' "$frontmatter" | grep '^title:' | sed 's/^title:[[:space:]]*//' | sed 's/^"\(.*\)"$/\1/' || true)
+    version=$(printf '%s\n' "$frontmatter" | grep '^version:' | awk '{print $2}' || true)
 
     # Parse optional category override (|| true: prevent set -e exit when field absent)
     fm_category=$(printf '%s\n' "$frontmatter" | grep '^category:' | sed 's/^category:[[:space:]]*//' | sed 's/^"\(.*\)"$/\1/' || true)
