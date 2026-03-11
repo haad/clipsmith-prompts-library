@@ -29,7 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Adding a prompt `.md` file with a duplicate `id` causes the build script to exit non-zero with an error message identifying the conflict
   4. Adding a `.md` file missing `title` or `version` frontmatter causes the build script to exit non-zero with an error message
   5. A prompt with a colon in its title, backslashes in its content, or multiline content builds correctly with properly JSON-escaped output
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Repository scaffold: directory structure, catalog.yaml, .gitignore, test prompt, JSON schema
+- [ ] 01-02-PLAN.md — Build script: scripts/build.sh with error detection, edge case validation, produces prompts.json
 
 ### Phase 2: Seed Catalog
 **Goal**: Flycut users syncing for the first time receive 23 immediately useful prompts across coding, writing, analysis, and creative categories
@@ -71,7 +75,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Build Foundation | 0/TBD | Not started | - |
+| 1. Build Foundation | 0/2 | Not started | - |
 | 2. Seed Catalog | 0/TBD | Not started | - |
 | 3. CI/CD and Deployment | 0/TBD | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |
