@@ -1,0 +1,83 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+# env/ - folder used by standard config repo pattern
+
+# Vector database and generated files
+dist/
+*.lance
+*.arrow
+
+# Environment variables and secrets
+.env
+.env.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Model cache
+.cache/
+models/
+*.pkl
+*.bin
+
+# Logs
+*.log
+logs/
+
+# Generated documents
+output/
+mcp-config.json
+
+data/auth.db*
+data/conversations.db
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore env files
+.env
+.envrc
+
+# Auto Claude data directory
+.auto-claude/
+examples/lablabs-report-generator
+.coverage
+node_modules/
