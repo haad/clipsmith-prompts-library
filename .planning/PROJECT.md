@@ -15,19 +15,19 @@ Flycut users receive a curated, versioned set of useful prompts that auto-sync t
 - ✓ Design document specifies complete repository structure — existing
 - ✓ Output JSON format defined (PromptCatalog/PromptDTO Swift types) — existing
 - ✓ Sync behavior documented (upsert by id, version-gated, user customization protection) — existing
+- ✓ Repository structure with prompts organized by category directories — Phase 1
+- ✓ YAML frontmatter format with title, version, category fields — Phase 1
+- ✓ Build script (bash, zero dependencies) that compiles .md files to prompts.json — Phase 1
+- ✓ catalog.yaml for catalog-level metadata and category validation — Phase 1
+- ✓ JSON Schema for validating built output — Phase 1
+- ✓ Template variable support ({{clipboard}} and custom variables) — Phase 1
+- ✓ .gitignore for standard exclusions — Phase 1
+- ✓ 23 prompt Markdown files across 4 categories (coding/8, writing/6, analysis/5, creative/4) — Phase 2
 
 ### Active
 
-- [ ] Repository structure with prompts organized by category directories
-- [ ] 23 prompt Markdown files across 4 categories (coding/8, writing/6, analysis/5, creative/4)
-- [ ] YAML frontmatter format with title, version, category fields
-- [ ] Build script (bash, zero dependencies) that compiles .md files to prompts.json
-- [ ] catalog.yaml for catalog-level metadata and category validation
 - [ ] GitHub Action workflow for automatic build and gh-pages deployment
-- [ ] JSON Schema for validating built output
-- [ ] Template variable support ({{clipboard}} and custom variables)
 - [ ] README with contributor documentation
-- [ ] .gitignore for standard exclusions
 
 ### Out of Scope
 
@@ -60,11 +60,13 @@ Flycut users receive a curated, versioned set of useful prompts that auto-sync t
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Markdown + YAML frontmatter for prompts | Human-readable, git-friendly, easy to contribute | — Pending |
-| Bash build script (no Node/Python) | Zero dependencies, works on CI without setup | — Pending |
+| Markdown + YAML frontmatter for prompts | Human-readable, git-friendly, easy to contribute | Validated Phase 1 |
+| Bash build script (no Node/Python) | Zero dependencies, works on CI without setup | Validated Phase 1 |
 | gh-pages deployment via GitHub Action | Free hosting, automatic on push to main | — Pending |
-| Category derived from directory name | Convention over configuration, less frontmatter boilerplate | — Pending |
-| prompts.json committed to main branch | Useful for PR review, overwritten by CI on each build | — Pending |
+| Category derived from directory name | Convention over configuration, less frontmatter boilerplate | Validated Phase 1 |
+| prompts.json committed to main branch | Useful for PR review, overwritten by CI on each build | Validated Phase 1 |
+| Numbered bold-label prompt body format | Visual consistency across all categories | Validated Phase 2 |
+| catalog.yaml version bump on content release | Signals content-significant changes to sync clients | Validated Phase 2 |
 
 ---
-*Last updated: 2026-03-11 after initialization*
+*Last updated: 2026-03-12 after Phase 2*
