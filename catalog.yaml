@@ -1,7 +1,8 @@
-version: 2
+version: 3
 
 categories:
   - coding
   - writing
   - analysis
   - creative
+  - devops
