@@ -28,7 +28,7 @@
           },
           "category": {
             "type": "string",
-            "enum": ["coding", "writing", "analysis", "creative"],
+            "enum": ["coding", "writing", "analysis", "creative", "devops", "product", "research", "development"],
             "description": "Prompt category"
           },
           "version": {
