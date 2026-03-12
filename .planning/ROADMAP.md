@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Build Foundation** - Directory skeleton, catalog.yaml, build script, and JSON schema — the prerequisite for all other work (completed 2026-03-11)
 - [x] **Phase 2: Seed Catalog** - All 23 prompt Markdown files across four categories with correct frontmatter and content (completed 2026-03-12)
 - [ ] **Phase 3: CI/CD and Deployment** - GitHub Actions workflow that builds, validates, and deploys prompts.json to gh-pages on push
-- [ ] **Phase 4: Documentation** - README authoring guide and versioning rules that make the repository contribution-safe
+- [x] **Phase 4: Documentation** - README authoring guide and versioning rules that make the repository contribution-safe (completed 2026-03-12)
 
 ## Phase Details
 
@@ -89,4 +89,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Build Foundation | 2/2 | Complete   | 2026-03-11 |
 | 2. Seed Catalog | 2/2 | Complete   | 2026-03-12 |
 | 3. CI/CD and Deployment | 2/2 | Complete   |  |
-| 4. Documentation | 0/1 | Not started | - |
+| 4. Documentation | 1/1 | Complete   | 2026-03-12 |

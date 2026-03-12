@@ -64,12 +64,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Documentation
 
-- [ ] **DOCS-01**: README explains what the repo is, how to use prompts in Flycut, and the sync URL
-- [ ] **DOCS-02**: README documents how to add a prompt (file format, frontmatter fields, PR workflow)
-- [ ] **DOCS-03**: README documents how to update a prompt (content change + version bump requirement)
-- [ ] **DOCS-04**: README explains template variables (`{{clipboard}}` and custom variables)
-- [ ] **DOCS-05**: README includes table of all prompts grouped by category
-- [ ] **DOCS-06**: README documents versioning rules prominently (never decrease, bump on update, catalog version)
+- [x] **DOCS-01**: README explains what the repo is, how to use prompts in Flycut, and the sync URL
+- [x] **DOCS-02**: README documents how to add a prompt (file format, frontmatter fields, PR workflow)
+- [x] **DOCS-03**: README documents how to update a prompt (content change + version bump requirement)
+- [x] **DOCS-04**: README explains template variables (`{{clipboard}}` and custom variables)
+- [x] **DOCS-05**: README includes table of all prompts grouped by category
+- [x] **DOCS-06**: README documents versioning rules prominently (never decrease, bump on update, catalog version)
 
 ## v2 Requirements
 
@@ -139,12 +139,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CICD-03 | Phase 3 | Complete |
 | CICD-04 | Phase 3 | Complete |
 | CICD-05 | Phase 3 | Complete |
-| DOCS-01 | Phase 4 | Pending |
-| DOCS-02 | Phase 4 | Pending |
-| DOCS-03 | Phase 4 | Pending |
-| DOCS-04 | Phase 4 | Pending |
-| DOCS-05 | Phase 4 | Pending |
-| DOCS-06 | Phase 4 | Pending |
+| DOCS-01 | Phase 4 | Complete |
+| DOCS-02 | Phase 4 | Complete |
+| DOCS-03 | Phase 4 | Complete |
+| DOCS-04 | Phase 4 | Complete |
+| DOCS-05 | Phase 4 | Complete |
+| DOCS-06 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 40 total
