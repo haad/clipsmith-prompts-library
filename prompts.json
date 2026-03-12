@@ -56,6 +56,48 @@
       "category": "coding",
       "version": 1,
       "content": "Write comprehensive unit tests for this code. Cover:\n\n1. **Happy path** — the expected, normal-use cases\n2. **Edge cases** — empty input, boundary values, maximum and minimum inputs\n3. **Error conditions** — invalid input, failure modes, exception handling\n4. **Setup and teardown** — any required state initialization or cleanup\n\nCode to test:\n\n{{clipboard}}\n\nUse descriptive test names that explain what is being tested and the expected outcome. Include comments where the test intent is not immediately obvious."
+    },
+    {
+      "id": "expand-bullet-points",
+      "title": "Expand Bullet Points",
+      "category": "writing",
+      "version": 1,
+      "content": "Expand these bullet points into full, polished prose. For each bullet point:\n\n1. **Write a full paragraph** — develop the idea with context, explanation, and where helpful, an example\n2. **Add transitions** — connect paragraphs so the text flows naturally from one point to the next\n3. **Preserve order** — maintain the original sequence of bullet points\n4. **Maintain key points** — do not drop, merge, or contradict any of the original content\n\nBullet points to expand:\n\n{{clipboard}}\n\nProduce polished prose, not just longer bullets. The result should read as a coherent piece of writing, not an itemised list in disguise."
+    },
+    {
+      "id": "fix-grammar",
+      "title": "Fix Grammar",
+      "category": "writing",
+      "version": 1,
+      "content": "Fix all grammar, spelling, and punctuation errors in this text. Follow these rules:\n\n1. **Preserve meaning** — do not change the original intent, tone, or style\n2. **Grammar** — correct subject-verb agreement, tense consistency, and sentence structure\n3. **Spelling** — fix all misspellings, including homophones used incorrectly\n4. **Punctuation** — correct commas, apostrophes, quotation marks, and sentence endings\n\nText to correct:\n\n{{clipboard}}\n\nProvide the corrected text, then list each correction made with a brief explanation of why it was changed."
+    },
+    {
+      "id": "rewrite-formal",
+      "title": "Rewrite Formally",
+      "category": "writing",
+      "version": 1,
+      "content": "Rewrite this text in a formal, professional tone. Ensure:\n\n1. **Meaning preserved** — all key information and intent from the original is retained\n2. **Language upgraded** — replace casual language, contractions, and slang with professional equivalents\n3. **Clarity maintained** — formal does not mean verbose; keep sentences clear and direct\n4. **Consistent register** — maintain the formal tone throughout, without reverting to casual phrasing\n\nText to rewrite:\n\n{{clipboard}}\n\nProvide the rewritten version only, without commentary."
+    },
+    {
+      "id": "simplify-language",
+      "title": "Simplify Language",
+      "category": "writing",
+      "version": 1,
+      "content": "Rewrite this text for clarity and simplicity. Apply these rules:\n\n1. **Shorter sentences** — break up long or complex sentences into shorter ones\n2. **Common words** — replace technical jargon, rare words, and complex phrases with everyday equivalents\n3. **Active voice** — convert passive constructions to active where possible\n4. **Target level** — aim for an 8th-grade reading level\n\nText to simplify:\n\n{{clipboard}}\n\nPreserve all essential information — simplify the language, not the content. Provide the simplified version only."
+    },
+    {
+      "id": "summarize-text",
+      "title": "Summarize Text",
+      "category": "writing",
+      "version": 1,
+      "content": "Summarize this text concisely. Capture:\n\n1. **Main points** — the central ideas or arguments presented\n2. **Key arguments** — the supporting reasoning or evidence\n3. **Conclusions** — what the text ultimately asserts or recommends\n\nText to summarize:\n\n{{clipboard}}\n\nKeep the summary to 3-5 sentences unless the source is very long. Preserve the original meaning without adding interpretation or opinion."
+    },
+    {
+      "id": "write-email-reply",
+      "title": "Write Email Reply",
+      "category": "writing",
+      "version": 1,
+      "content": "Write a professional reply to this email. The reply should:\n\n1. **Address all points** — respond to every question or request raised in the original email\n2. **Be concise** — say what needs to be said without unnecessary padding or repetition\n3. **Maintain tone** — match the professional register appropriate for the relationship and context\n4. **End with a next step** — close with a clear action, decision, or follow-up commitment\n\nEmail to reply to:\n\n{{clipboard}}\n\nProvide the reply text only, ready to send."
     }
   ]
 }
