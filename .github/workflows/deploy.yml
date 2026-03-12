@@ -1,0 +1,43 @@
+name: Build and Deploy Prompts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "prompts/**"
+      - "catalog.yaml"
+      - "scripts/build.sh"
+      - "schema/prompt.schema.json"
+      - "index.html"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-gh-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and validate
+        run: bash scripts/build.sh
+
+      - name: Prepare deploy staging
+        run: |
+          mkdir -p _deploy
+          cp prompts.json _deploy/prompts.json
+          cp index.html _deploy/index.html
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_deploy
+          force_orphan: true
