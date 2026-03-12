@@ -2,11 +2,60 @@
   "version": 1,
   "prompts": [
     {
+      "id": "add-error-handling",
+      "title": "Add Error Handling",
+      "category": "coding",
+      "version": 1,
+      "content": "Add robust error handling to this code. Focus on:\n\n1. **Input validation** — check for invalid, missing, or malformed inputs before processing\n2. **Nil/null checks** — guard against null dereferences at every access point\n3. **Failure paths** — wrap operations that can fail with try-catch or result types\n4. **Error messages** — provide clear, actionable messages that identify the problem\n\nCode to improve:\n\n{{clipboard}}\n\nKeep error handling proportional to risk — not every line needs a guard, but every failure that could crash or corrupt state must be handled. Show the updated code."
+    },
+    {
       "id": "code-review-swift",
       "title": "Swift Code Review",
       "category": "coding",
       "version": 1,
       "content": "Review this Swift code for correctness, safety, and style. Focus on:\n\n1. **Correctness** — logic errors, off-by-one, nil handling, race conditions\n2. **Safety** — force unwraps, unowned references, unchecked casts\n3. **Style** — naming conventions, Swift idioms, unnecessary complexity\n4. **Performance** — obvious N+1 patterns, unnecessary allocations\n\nCode to review:\n\n{{clipboard}}\n\nProvide specific line-by-line feedback with suggested fixes."
+    },
+    {
+      "id": "convert-to-async",
+      "title": "Convert to Async/Await",
+      "category": "coding",
+      "version": 1,
+      "content": "Convert this callback or completion-handler code to async/await. Ensure:\n\n1. **Behaviour preserved** — all existing logic, branching, and side effects remain identical\n2. **Error handling** — use do-catch blocks to replace callback error parameters\n3. **Cancellation** — maintain cancellation support where the original code supported it\n4. **Concurrency** — preserve any thread or actor isolation requirements\n\nCode to convert:\n\n{{clipboard}}\n\nShow the fully converted async/await version. Note any cases where the conversion required a design decision or where behaviour could not be perfectly preserved."
+    },
+    {
+      "id": "explain-code",
+      "title": "Explain Code",
+      "category": "coding",
+      "version": 1,
+      "content": "Explain this code step by step, as if the reader is unfamiliar with the codebase. Cover:\n\n1. **What it does** — the overall purpose and high-level behaviour\n2. **How it does it** — the logic flow, key algorithms, and data structures used\n3. **Key decisions** — why the code is structured this way, notable patterns or trade-offs\n4. **External dependencies** — libraries, APIs, or system resources it relies on\n\nCode to explain:\n\n{{clipboard}}\n\nProvide a clear, structured explanation that a developer new to this code can follow."
+    },
+    {
+      "id": "fix-bug",
+      "title": "Fix Bug",
+      "category": "coding",
+      "version": 1,
+      "content": "Find and fix all bugs in this code. Check for:\n\n1. **Logic errors** — incorrect conditions, wrong operators, flawed control flow\n2. **Edge cases** — empty input, zero values, boundary conditions, null/nil paths\n3. **Type mismatches** — implicit conversions, incorrect assumptions about types\n4. **Off-by-one errors** — loop bounds, index calculations, slice boundaries\n\nCode to fix:\n\n{{clipboard}}\n\nFor each bug found, explain what was wrong and why the fix is correct. Show the corrected code."
+    },
+    {
+      "id": "optimize-performance",
+      "title": "Optimize Performance",
+      "category": "coding",
+      "version": 1,
+      "content": "Identify and fix performance bottlenecks in this code. Check for:\n\n1. **Unnecessary allocations** — object creation inside loops, avoidable copies, retained closures\n2. **N+1 patterns** — repeated queries or lookups that should be batched or cached\n3. **Redundant computation** — repeated calculations that can be memoized or moved outside loops\n4. **Blocking operations** — synchronous calls that should be async, or work on the wrong thread\n\nCode to optimize:\n\n{{clipboard}}\n\nFor each issue found, suggest a specific fix and describe the expected performance improvement. Prioritise changes by impact — not every micro-optimisation is worth the added complexity."
+    },
+    {
+      "id": "refactor-code",
+      "title": "Refactor Code",
+      "category": "coding",
+      "version": 1,
+      "content": "Refactor this code to improve readability, maintainability, and simplicity. Focus on:\n\n1. **Clarity** — rename variables and functions to be more descriptive\n2. **Simplicity** — remove duplication, simplify complex expressions, reduce nesting\n3. **Structure** — extract well-named helper functions, group related logic\n4. **Maintainability** — apply consistent patterns, reduce coupling\n\nCode to refactor:\n\n{{clipboard}}\n\nPreserve all external behaviour. For each change made, explain what was changed and why it improves the code."
+    },
+    {
+      "id": "write-tests",
+      "title": "Write Tests",
+      "category": "coding",
+      "version": 1,
+      "content": "Write comprehensive unit tests for this code. Cover:\n\n1. **Happy path** — the expected, normal-use cases\n2. **Edge cases** — empty input, boundary values, maximum and minimum inputs\n3. **Error conditions** — invalid input, failure modes, exception handling\n4. **Setup and teardown** — any required state initialization or cleanup\n\nCode to test:\n\n{{clipboard}}\n\nUse descriptive test names that explain what is being tested and the expected outcome. Include comments where the test intent is not immediately obvious."
     }
   ]
 }
