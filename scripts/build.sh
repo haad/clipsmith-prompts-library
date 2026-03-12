@@ -113,3 +113,15 @@ printf '%s\n' "${PROMPT_JSONS[@]}" \
 
 COUNT=$(jq '.prompts | length' "$OUTPUT")
 echo "Built $OUTPUT: $COUNT prompt(s), catalog version $CATALOG_VERSION"
+
+# Structural validation — verify assembled prompts.json has the expected shape
+if ! jq -e '
+  (.version | type == "number" and . > 0) and
+  (.prompts | type == "array" and length > 0) and
+  (.prompts | all(has("id") and has("title") and has("category") and has("version") and has("content"))) and
+  (.prompts | all(.id != "" and .title != "" and .content != ""))
+' "$OUTPUT" > /dev/null; then
+    echo "ERROR: prompts.json failed structural validation" >&2
+    exit 1
+fi
+echo "Validation passed: prompts.json structure is valid"
