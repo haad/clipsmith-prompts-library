@@ -62,8 +62,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Build validation and CI workflow: add structural validation to build.sh, create GitHub Actions deploy.yml with path-filtered triggers and gh-pages deployment
-- [ ] 03-02-PLAN.md — Landing page: static index.html with category filters, search, copy-to-clipboard, dark/light mode, fetching prompts.json at runtime
+- [x] 03-01-PLAN.md — Build validation and CI workflow: add structural validation to build.sh, create GitHub Actions deploy.yml with path-filtered triggers and gh-pages deployment
+- [x] 03-02-PLAN.md — Landing page: static index.html with category filters, search, copy-to-clipboard, dark/light mode, fetching prompts.json at runtime
 
 ### Phase 4: Documentation
 **Goal**: A contributor who has never seen the repository can add or update a prompt correctly without breaking the Flycut sync contract
@@ -74,7 +74,10 @@ Plans:
   2. README provides a complete step-by-step guide for adding a new prompt file with correct frontmatter
   3. README documents the version bump requirement and explains that omitting it silently prevents users from receiving updates
   4. README includes a table listing all 23 prompts grouped by category with their names and descriptions
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 04-01-PLAN.md — Complete README.md with all six DOCS requirements: repo overview, add/update guides, template variables, versioning rules, and 23-prompt catalog table
 
 ## Progress
 
@@ -85,5 +88,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Build Foundation | 2/2 | Complete   | 2026-03-11 |
 | 2. Seed Catalog | 2/2 | Complete   | 2026-03-12 |
-| 3. CI/CD and Deployment | 1/2 | In Progress|  |
-| 4. Documentation | 0/TBD | Not started | - |
+| 3. CI/CD and Deployment | 2/2 | Complete   |  |
+| 4. Documentation | 0/1 | Not started | - |
