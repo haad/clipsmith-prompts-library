@@ -32,8 +32,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Repository scaffold: directory structure, catalog.yaml, .gitignore, test prompt, JSON schema
-- [ ] 01-02-PLAN.md — Build script: scripts/build.sh with error detection, edge case validation, produces prompts.json
+- [x] 01-01-PLAN.md — Repository scaffold: directory structure, catalog.yaml, .gitignore, test prompt, JSON schema
+- [x] 01-02-PLAN.md — Build script: scripts/build.sh with error detection, edge case validation, produces prompts.json
 
 ### Phase 2: Seed Catalog
 **Goal**: Flycut users syncing for the first time receive 23 immediately useful prompts across coding, writing, analysis, and creative categories
@@ -44,7 +44,11 @@ Plans:
   2. Each of the four category directories (`coding/`, `writing/`, `analysis/`, `creative/`) contains the correct count of `.md` files (8, 6, 5, 4)
   3. Every prompt object in `prompts.json` has all five required fields (`id`, `title`, `category`, `version`, `content`) with version 1 and non-empty content
   4. At least one prompt in `prompts.json` contains a `{{clipboard}}` or `{{variable}}` template placeholder in its `content` field
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Coding and writing prompts: 7 new coding + 6 new writing prompt files with frontmatter and {{clipboard}} bodies
+- [ ] 02-02-PLAN.md — Analysis and creative prompts: 5 analysis + 4 creative prompt files, catalog version bump to 2, full-suite 23-prompt validation
 
 ### Phase 3: CI/CD and Deployment
 **Goal**: Every push to `main` that touches prompt source files automatically builds, validates, and publishes an updated `prompts.json` to the Flycut sync URL
@@ -76,6 +80,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Build Foundation | 2/2 | Complete   | 2026-03-11 |
-| 2. Seed Catalog | 0/TBD | Not started | - |
+| 2. Seed Catalog | 0/2 | In progress | - |
 | 3. CI/CD and Deployment | 0/TBD | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |
