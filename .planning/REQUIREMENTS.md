@@ -23,31 +23,31 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Seed Prompts
 
-- [ ] **SEED-01**: 8 coding prompts: code-review-swift, explain-code, fix-bug, write-tests, refactor-code, add-error-handling, convert-to-async, optimize-performance
-- [ ] **SEED-02**: 6 writing prompts: summarize-text, rewrite-formal, fix-grammar, simplify-language, write-email-reply, expand-bullet-points
+- [x] **SEED-01**: 8 coding prompts: code-review-swift, explain-code, fix-bug, write-tests, refactor-code, add-error-handling, convert-to-async, optimize-performance
+- [x] **SEED-02**: 6 writing prompts: summarize-text, rewrite-formal, fix-grammar, simplify-language, write-email-reply, expand-bullet-points
 - [ ] **SEED-03**: 5 analysis prompts: analyze-data, compare-options, extract-action-items, identify-risks, create-summary-table
 - [ ] **SEED-04**: 4 creative prompts: brainstorm, write-story, generate-names, create-outline
-- [ ] **SEED-05**: All 23 prompts have version 1, meaningful content, and correct frontmatter
+- [x] **SEED-05**: All 23 prompts have version 1, meaningful content, and correct frontmatter
 
 ### Build Pipeline
 
-- [ ] **BILD-01**: `scripts/build.sh` compiles all `.md` files under `prompts/` into `prompts.json` at repo root
-- [ ] **BILD-02**: Build script is zero-dependency (bash + sed/awk/grep + jq for JSON assembly)
-- [ ] **BILD-03**: Build script reads catalog version from `catalog.yaml`
-- [ ] **BILD-04**: Build script derives `id` from filename and `category` from directory (with frontmatter override)
-- [ ] **BILD-05**: Build script fails with error on duplicate IDs across categories
-- [ ] **BILD-06**: Build script fails with error on missing required frontmatter fields (title, version)
-- [ ] **BILD-07**: Build script fails with error on invalid category (not in catalog.yaml list)
-- [ ] **BILD-08**: Build script outputs prompts sorted alphabetically by `id` for deterministic builds
-- [ ] **BILD-09**: Build script properly JSON-escapes multiline Markdown content (newlines, quotes, backslashes)
-- [ ] **BILD-10**: Build script works on macOS bash 3.2 (no `declare -A` or bash 4+ features)
-- [ ] **BILD-11**: Build script strips leading blank lines from extracted prompt body content
+- [x] **BILD-01**: `scripts/build.sh` compiles all `.md` files under `prompts/` into `prompts.json` at repo root
+- [x] **BILD-02**: Build script is zero-dependency (bash + sed/awk/grep + jq for JSON assembly)
+- [x] **BILD-03**: Build script reads catalog version from `catalog.yaml`
+- [x] **BILD-04**: Build script derives `id` from filename and `category` from directory (with frontmatter override)
+- [x] **BILD-05**: Build script fails with error on duplicate IDs across categories
+- [x] **BILD-06**: Build script fails with error on missing required frontmatter fields (title, version)
+- [x] **BILD-07**: Build script fails with error on invalid category (not in catalog.yaml list)
+- [x] **BILD-08**: Build script outputs prompts sorted alphabetically by `id` for deterministic builds
+- [x] **BILD-09**: Build script properly JSON-escapes multiline Markdown content (newlines, quotes, backslashes)
+- [x] **BILD-10**: Build script works on macOS bash 3.2 (no `declare -A` or bash 4+ features)
+- [x] **BILD-11**: Build script strips leading blank lines from extracted prompt body content
 
 ### Output Format
 
-- [ ] **JSON-01**: `prompts.json` matches Flycut's `PromptCatalog` structure: `{version: Int, prompts: [PromptDTO]}`
+- [x] **JSON-01**: `prompts.json` matches Flycut's `PromptCatalog` structure: `{version: Int, prompts: [PromptDTO]}`
 - [x] **JSON-02**: Each prompt object has exactly 5 fields: `id`, `title`, `category`, `version`, `content` (no extras)
-- [ ] **JSON-03**: `prompts.json` validates against `schema/prompt.schema.json`
+- [x] **JSON-03**: `prompts.json` validates against `schema/prompt.schema.json`
 
 ### Validation Schema
 
@@ -113,27 +113,27 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PRMT-03 | Phase 1 | Complete |
 | PRMT-04 | Phase 1 | Complete |
 | PRMT-05 | Phase 1 | Complete |
-| BILD-01 | Phase 1 | Pending |
-| BILD-02 | Phase 1 | Pending |
-| BILD-03 | Phase 1 | Pending |
-| BILD-04 | Phase 1 | Pending |
-| BILD-05 | Phase 1 | Pending |
-| BILD-06 | Phase 1 | Pending |
-| BILD-07 | Phase 1 | Pending |
-| BILD-08 | Phase 1 | Pending |
-| BILD-09 | Phase 1 | Pending |
-| BILD-10 | Phase 1 | Pending |
-| BILD-11 | Phase 1 | Pending |
-| JSON-01 | Phase 1 | Pending |
+| BILD-01 | Phase 1 | Complete |
+| BILD-02 | Phase 1 | Complete |
+| BILD-03 | Phase 1 | Complete |
+| BILD-04 | Phase 1 | Complete |
+| BILD-05 | Phase 1 | Complete |
+| BILD-06 | Phase 1 | Complete |
+| BILD-07 | Phase 1 | Complete |
+| BILD-08 | Phase 1 | Complete |
+| BILD-09 | Phase 1 | Complete |
+| BILD-10 | Phase 1 | Complete |
+| BILD-11 | Phase 1 | Complete |
+| JSON-01 | Phase 1 | Complete |
 | JSON-02 | Phase 1 | Complete |
-| JSON-03 | Phase 1 | Pending |
+| JSON-03 | Phase 1 | Complete |
 | SCHM-01 | Phase 1 | Complete |
 | SCHM-02 | Phase 1 | Complete |
-| SEED-01 | Phase 2 | Pending |
-| SEED-02 | Phase 2 | Pending |
+| SEED-01 | Phase 2 | Complete |
+| SEED-02 | Phase 2 | Complete |
 | SEED-03 | Phase 2 | Pending |
 | SEED-04 | Phase 2 | Pending |
-| SEED-05 | Phase 2 | Pending |
+| SEED-05 | Phase 2 | Complete |
 | CICD-01 | Phase 3 | Pending |
 | CICD-02 | Phase 3 | Pending |
 | CICD-03 | Phase 3 | Pending |
