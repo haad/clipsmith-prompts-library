@@ -199,41 +199,60 @@ Without this step, the sync URL returns a 404 even though the `gh-pages` branch 
 
 ## Prompt catalog
 
-All 23 prompts, grouped by category and sorted alphabetically by prompt ID.
+All 65 prompts, grouped by category and sorted alphabetically by prompt ID.
 
-### Coding (8 prompts)
+### Coding (21 prompts)
 
 | Prompt ID | Title | Description |
 |-----------|-------|-------------|
 | `add-error-handling` | Add Error Handling | Add proper error handling to code |
 | `code-review-swift` | Swift Code Review | Review Swift code for correctness, safety, and idiomatic style |
 | `convert-to-async` | Convert to Async/Await | Modernize callback/completion handler code |
+| `create-adr` | Create Architectural Decision Record | Create a structured ADR document for architecture decisions |
+| `create-react-component` | Create React Component | Scaffold a new React component with TypeScript types, tests, and accessibility |
+| `csharp-coding-style` | C# Coding Style | C# naming conventions, formatting, and modern language features guide |
+| `domain-driven-design` | Domain-Driven Design | DDD patterns including aggregates, entities, value objects, and domain events |
+| `dotnet-clean-architecture` | Clean Architecture (.NET) | Four-layer clean architecture guide for .NET projects |
+| `dotnet-unit-integration-tests` | Unit and Integration Tests (.NET) | Testing guide with xUnit, FakeItEasy, and Testcontainers for .NET |
 | `explain-code` | Explain Code | Step-by-step explanation of how code works |
 | `fix-bug` | Fix Bug | Find and fix bugs in code |
+| `object-calisthenics` | Object Calisthenics | Nine rules for writing cleaner, more maintainable object-oriented code |
 | `optimize-performance` | Optimize Performance | Identify and fix performance issues |
+| `python-coding-style` | Python Coding Style | PEP 8 conventions, type hints, docstrings, and error handling for Python |
+| `python-testing` | Python Testing Guide | pytest patterns, fixtures, parametrize, and coverage for Python projects |
+| `react-patterns` | React Patterns | React component patterns, hooks, state management, and accessibility guide |
+| `react-testing` | React Testing Guide | Jest and React Testing Library patterns for testing React components |
 | `refactor-code` | Refactor Code | Improve code structure without changing behavior |
+| `review-react-component` | Review React Component | Review a React component against TypeScript, accessibility, and testing standards |
+| `typescript-style` | TypeScript Style Guide | TypeScript strict mode conventions, naming, imports, and null handling |
 | `write-tests` | Write Tests | Generate comprehensive unit tests |
 
-### Writing (6 prompts)
+### Writing (8 prompts)
 
 | Prompt ID | Title | Description |
 |-----------|-------|-------------|
+| `create-readme` | Create README | Create a comprehensive, well-structured README.md file for a project |
 | `expand-bullet-points` | Expand Bullet Points | Turn bullet points into full paragraphs |
 | `fix-grammar` | Fix Grammar | Grammar and spelling correction |
+| `review-writing-clarity` | Review Writing Clarity | Review and improve writing clarity using Orwell's six rules |
 | `rewrite-formal` | Rewrite Formally | Professional tone rewrite |
 | `simplify-language` | Simplify Language | Make text clearer and simpler |
 | `summarize-text` | Summarize Text | Concise summary of text |
 | `write-email-reply` | Write Email Reply | Draft a professional email reply |
 
-### Analysis (5 prompts)
+### Analysis (9 prompts)
 
 | Prompt ID | Title | Description |
 |-----------|-------|-------------|
 | `analyze-data` | Analyze Data | Extract key insights from data |
+| `analyze-dataset` | Analyze Dataset | Profile a dataset and produce a structured summary with insights |
 | `compare-options` | Compare Options | Pros/cons comparison |
+| `create-eda-notebook` | Create EDA Notebook | Scaffold an exploratory data analysis Jupyter notebook for a dataset |
 | `create-summary-table` | Create Summary Table | Structure text into a comparison table |
 | `extract-action-items` | Extract Action Items | Pull action items from meeting notes or text |
+| `extract-meeting-details` | Extract Meeting Details | Extract and analyze information from client discovery kickoff meeting notes |
 | `identify-risks` | Identify Risks | Risk analysis of a plan or proposal |
+| `python-data-analysis-guide` | Python Data Analysis Guide | Best practices for pandas, numpy, and visualization in data analysis |
 
 ### Creative (4 prompts)
 
@@ -243,3 +262,46 @@ All 23 prompts, grouped by category and sorted alphabetically by prompt ID.
 | `create-outline` | Create Outline | Structured outline from a topic |
 | `generate-names` | Generate Names | Name ideas for projects, products, or features |
 | `write-story` | Write Story | Short story from a prompt |
+
+### DevOps (5 prompts)
+
+| Prompt ID | Title | Description |
+|-----------|-------|-------------|
+| `ci-cd-pipeline-guide` | CI/CD Pipeline Guide | Pipeline structure, secrets management, caching, and deployment gates |
+| `infrastructure-security` | Infrastructure Security | Security best practices for secrets, IAM, networking, containers, and scanning |
+| `review-infrastructure-code` | Review Infrastructure Code | Review IaC against security, Terraform, and CI/CD standards |
+| `scaffold-ci-cd-pipeline` | Scaffold CI/CD Pipeline | Generate a complete CI/CD pipeline for any platform and stack |
+| `terraform-guide` | Terraform Guide | Terraform module structure, remote state, variables, and style conventions |
+
+### Product (7 prompts)
+
+| Prompt ID | Title | Description |
+|-----------|-------|-------------|
+| `decision-document` | Write Decision Document | Structure a product decision with options, trade-offs, and recommendation |
+| `feature-prioritization` | Prioritize Features | Score and rank feature requests using structured frameworks |
+| `prd-generation` | Generate PRD | Create a product requirements document from a feature description |
+| `roadmap-prioritization` | Prioritize Roadmap | Evaluate and prioritize features using impact vs effort analysis |
+| `stakeholder-update` | Draft Stakeholder Update | Write a clear product update for stakeholders |
+| `swot-analysis` | SWOT Analysis | Generate a SWOT analysis for a product or initiative |
+| `user-persona` | Create User Persona | Generate detailed user personas from customer data or descriptions |
+
+### Research (6 prompts)
+
+| Prompt ID | Title | Description |
+|-----------|-------|-------------|
+| `competitor-analysis` | Competitor Analysis | Analyze competitor strengths, weaknesses, positioning, and strategy |
+| `market-sizing` | Market Sizing | Estimate TAM, SAM, and SOM for a product or market opportunity |
+| `market-trends` | Market Trend Analysis | Identify and evaluate market trends, industry shifts, and emerging opportunities |
+| `product-market-fit` | Assess Product-Market Fit | Evaluate product-market fit from user data and market signals |
+| `sentiment-analysis` | Consumer Sentiment Analysis | Track shifts in consumer sentiment and emerging preferences |
+| `user-feedback-synthesis` | Synthesize User Feedback | Aggregate and prioritize insights from user feedback, reviews, or support tickets |
+
+### Development (5 prompts)
+
+| Prompt ID | Title | Description |
+|-----------|-------|-------------|
+| `api-design-review` | API Design Review | Review and improve REST or GraphQL API design |
+| `architecture-decision-record` | Architecture Decision Record | Document an architectural decision with context, options, and rationale |
+| `incident-postmortem` | Incident Postmortem | Write a blameless incident postmortem with root cause analysis |
+| `sprint-planning` | Sprint Planning | Break down epics or features into sprint-ready user stories with estimates |
+| `technical-debt-assessment` | Assess Technical Debt | Identify, categorize, and prioritize technical debt |

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "prompts": [
     {
       "id": "analyze-data",
@@ -240,6 +240,41 @@
       "content": "Write a short story based on the following prompt or concept. Include:\n\n1. **Characters** — vivid, memorable protagonists with clear motivations\n2. **Setting** — a concrete, atmospheric sense of place and time\n3. **Arc** — a clear narrative structure with setup, conflict, and resolution\n4. **Length** — 500–800 words; tight and purposeful throughout\n\nStory prompt or concept:\n\n{{clipboard}}\n\nEnd with a satisfying conclusion that resonates with the story's central theme."
     },
     {
+      "id": "api-design-review",
+      "title": "API Design Review",
+      "category": "development",
+      "version": 1,
+      "content": "Review the following API design (endpoints, schema, or specification) and provide detailed feedback.\n\nEvaluate against these criteria:\n\n1. **Naming & Consistency** — are resource names, endpoints, and fields clear and consistent?\n2. **RESTful Principles** — proper use of HTTP methods, status codes, and resource modelling\n3. **Request/Response Design** — are payloads well-structured, minimal, and predictable?\n4. **Error Handling** — are errors informative, consistent, and machine-parseable?\n5. **Pagination & Filtering** — are collection endpoints properly paginated with filtering support?\n6. **Versioning** — is there a clear versioning strategy?\n7. **Authentication & Authorization** — is the auth model appropriate and consistently applied?\n8. **Rate Limiting & Quotas** — are there protections against abuse?\n9. **Idempotency** — are mutating operations safe to retry?\n10. **Documentation** — are the endpoints self-documenting or well-described?\n\nAPI design to review:\n\n{{clipboard}}\n\nFor each issue found:\n- Explain the problem\n- Rate severity (critical / important / suggestion)\n- Provide a concrete fix with example\n\nEnd with a summary of the top 3 changes that would most improve this API."
+    },
+    {
+      "id": "architecture-decision-record",
+      "title": "Architecture Decision Record",
+      "category": "development",
+      "version": 1,
+      "content": "Create an Architecture Decision Record (ADR) based on the following context or technical decision.\n\nUse this structure:\n\n## Title\nADR-NNN: [Short descriptive title]\n\n## Status\nProposed / Accepted / Deprecated / Superseded\n\n## Context\n- What is the technical or business problem?\n- What forces are at play (constraints, requirements, team capabilities)?\n- Why does this decision need to be made now?\n\n## Options Considered\n\nFor each option:\n- **Description** — what the approach entails\n- **Pros** — advantages and strengths\n- **Cons** — disadvantages and risks\n- **Effort** — rough implementation cost\n- **Examples** — where this approach has worked before\n\n## Decision\n- Which option was chosen and why\n- How it satisfies the key requirements\n- What trade-offs are being accepted\n\n## Consequences\n- What becomes easier or harder as a result\n- What follow-up work is needed\n- What to watch for — signals that this decision should be revisited\n\nContext / decision:\n\n{{clipboard}}\n\nBe precise about the technical trade-offs. Future readers need to understand not just what was decided, but why — especially the alternatives that were rejected and the reasoning behind that."
+    },
+    {
+      "id": "incident-postmortem",
+      "title": "Incident Postmortem",
+      "category": "development",
+      "version": 1,
+      "content": "Write a blameless incident postmortem based on the following incident details, logs, or notes.\n\nStructure:\n\n## Incident Summary\n- **Date/Time:** when it started and ended\n- **Duration:** total impact time\n- **Severity:** SEV1 / SEV2 / SEV3 / SEV4\n- **Impact:** what users experienced, how many were affected\n\n## Timeline\nChronological sequence of events from first signal to full resolution. Include:\n- When the issue was first detected (and how)\n- Key actions taken during response\n- When mitigation was applied\n- When full resolution was confirmed\n\n## Root Cause Analysis\n- **Immediate cause** — what directly triggered the incident\n- **Contributing factors** — conditions that allowed the immediate cause to have impact\n- **Underlying cause** — the deeper systemic issue (use 5 Whys technique)\n\n## What Went Well\n- Things that worked during detection and response\n- Processes or tools that helped\n\n## What Went Wrong\n- Gaps in detection, response, or communication\n- Missing runbooks, monitoring, or safeguards\n\n## Action Items\nFor each action item:\n- Description of the fix or improvement\n- Owner\n- Priority (P0 / P1 / P2)\n- Target completion date\n- Whether it addresses the root cause or a contributing factor\n\n## Lessons Learned\n- Key takeaways for the team\n- How this changes our understanding of risk\n\nIncident details:\n\n{{clipboard}}\n\nKeep the tone blameless and constructive. Focus on systems and processes, not individuals. The goal is to learn and prevent recurrence."
+    },
+    {
+      "id": "sprint-planning",
+      "title": "Sprint Planning",
+      "category": "development",
+      "version": 1,
+      "content": "Break down the following epic, feature, or project into sprint-ready user stories suitable for a development team.\n\nFor each user story:\n\n1. **Title** — concise description of the deliverable\n2. **User Story** — \"As a [user type], I want [capability], so that [benefit]\"\n3. **Acceptance Criteria** — specific, testable conditions for \"done\" (use Given/When/Then where appropriate)\n4. **Story Points** — estimate using Fibonacci scale (1, 2, 3, 5, 8, 13)\n5. **Dependencies** — other stories or external requirements this depends on\n6. **Technical Notes** — implementation hints, relevant files, or API changes needed\n\nThen provide:\n\n- **Suggested Sprint Grouping** — which stories fit into which sprint, respecting dependencies\n- **Critical Path** — the sequence of stories that determines the minimum timeline\n- **Risks** — stories with high uncertainty or external dependencies\n- **Definition of Done** — what \"complete\" means for this body of work\n\nEpic / feature to break down:\n\n{{clipboard}}\n\nStories should be independently deliverable where possible. Aim for stories that can be completed in 1-3 days. If a story is larger than 8 points, break it down further."
+    },
+    {
+      "id": "technical-debt-assessment",
+      "title": "Assess Technical Debt",
+      "category": "development",
+      "version": 1,
+      "content": "Analyze the following code, architecture description, or codebase notes and produce a technical debt assessment.\n\nFor each debt item identified:\n\n1. **Description** — what the issue is, in clear terms\n2. **Category** — code quality / architecture / testing / infrastructure / dependencies / documentation\n3. **Impact** — how it affects development velocity, reliability, or user experience\n4. **Risk** — what happens if it's not addressed (low / medium / high / critical)\n5. **Effort to Fix** — rough estimate (hours / days / weeks)\n6. **Interest Rate** — is this getting worse over time? How fast?\n\nThen provide:\n\n- **Prioritized Debt Backlog** — ordered by risk × impact, with quick wins highlighted\n- **Recommended Sprint Allocation** — suggested percentage of sprint capacity for debt reduction\n- **Dependencies** — debt items that should be addressed together\n- **Strategic Recommendations** — systemic changes to prevent similar debt accumulation\n\nCode / architecture context:\n\n{{clipboard}}\n\nFocus on debt that meaningfully slows down the team or creates risk. Not every imperfection is worth fixing — distinguish between \"messy but harmless\" and \"actively causing problems.\""
+    },
+    {
       "id": "ci-cd-pipeline-guide",
       "title": "CI/CD Pipeline Guide",
       "category": "devops",
@@ -273,6 +308,97 @@
       "category": "devops",
       "version": 1,
       "content": "# Terraform\n\n## Module Structure\n\n- Organize infrastructure as reusable modules. Each module must have `main.tf`, `variables.tf`, `outputs.tf`, and `README.md`.\n- Root configurations call modules; they do not contain resource definitions directly.\n- Use a consistent directory layout:\n\n```\ninfrastructure/\n  modules/\n    networking/\n    compute/\n    database/\n  environments/\n    dev/\n    staging/\n    prod/\n```\n\n## Remote State\n\n- Always use remote state (S3 + DynamoDB locking, Azure Blob, GCS, or Terraform Cloud). Never commit `.tfstate` files.\n- Use separate state files per environment. Never share state between environments.\n- Enable state encryption at rest.\n\n## Variables and Values\n\n- Never hardcode environment-specific values (account IDs, region names, CIDR blocks, secrets). Use `variables.tf`.\n- Provide descriptions and types for all variables. Use validation blocks for constrained inputs.\n- Use `locals` for computed or repeated values; avoid duplicating expressions.\n\n```hcl\nvariable \"environment\" {\n  type        = string\n  description = \"Deployment environment (dev, staging, prod)\"\n  validation {\n    condition     = contains([\"dev\", \"staging\", \"prod\"], var.environment)\n    error_message = \"Environment must be dev, staging, or prod.\"\n  }\n}\n```\n\n## Tagging\n\n- Apply consistent tags to all resources: at minimum `environment`, `project`, `managed-by = terraform`, and `owner`.\n- Use a `locals` block for the common tag map and merge with resource-specific tags.\n\n```hcl\nlocals {\n  common_tags = {\n    environment = var.environment\n    project     = var.project_name\n    managed-by  = \"terraform\"\n  }\n}\n```\n\n## Style\n\n- Use `terraform fmt` before committing. CI must reject unformatted code.\n- Use `terraform validate` and `tflint` in pre-commit hooks.\n- Prefer `for_each` over `count` for resources with meaningful keys (avoids index-based drift).\n- Pin provider versions in `required_providers` and pin Terraform itself with `required_version`."
+    },
+    {
+      "id": "decision-document",
+      "title": "Write Decision Document",
+      "category": "product",
+      "version": 1,
+      "content": "Create a structured decision document based on the following context. This document should help a team align on a decision quickly and confidently.\n\nStructure:\n\n1. **Decision Title** — a clear one-line statement of what needs to be decided\n2. **Context** — background information, why this decision is needed now\n3. **Options** — list each viable option with:\n   - Description\n   - Pros (3-5 bullet points)\n   - Cons (3-5 bullet points)\n   - Estimated effort and timeline\n   - Risks\n4. **Evaluation Criteria** — the factors that matter most for this decision (e.g. speed to market, cost, user experience, technical debt)\n5. **Recommendation** — which option to go with and why, tied back to the evaluation criteria\n6. **What We're Trading Off** — be explicit about what we're giving up\n7. **Reversibility** — how easy is it to change course if this turns out wrong?\n8. **Next Steps** — concrete actions if the recommendation is approved\n\nContext / decision to make:\n\n{{clipboard}}\n\nBe balanced and honest in the analysis. Present options fairly before making a recommendation. Call out assumptions clearly."
+    },
+    {
+      "id": "feature-prioritization",
+      "title": "Prioritize Features",
+      "category": "product",
+      "version": 1,
+      "content": "You are a product manager evaluating feature requests. Analyze the following list and produce a structured prioritization.\n\nFor each feature, assess using multiple frameworks:\n\n**RICE Score:**\n- Reach — how many users will this affect per quarter?\n- Impact — how much will it move the needle? (3 = massive, 2 = high, 1 = medium, 0.5 = low, 0.25 = minimal)\n- Confidence — how sure are we? (100% / 80% / 50%)\n- Effort — person-months required\n\n**MoSCoW Classification:**\n- Must have / Should have / Could have / Won't have (this time)\n\n**Strategic Alignment:**\n- Does it support current company objectives?\n- Does it improve retention, acquisition, or monetization?\n\nFeature requests to evaluate:\n\n{{clipboard}}\n\nDeliver:\n1. A scoring table with RICE scores and MoSCoW labels\n2. A recommended build order with rationale\n3. Features that should be investigated further before committing\n4. Features to explicitly say no to (and why)"
+    },
+    {
+      "id": "prd-generation",
+      "title": "Generate PRD",
+      "category": "product",
+      "version": 1,
+      "content": "You are a senior product manager. Generate a comprehensive Product Requirements Document (PRD) based on the following feature description or notes.\n\nInclude these sections:\n\n1. **Overview** — problem statement, target users, and business context\n2. **Goals & Success Metrics** — measurable outcomes and KPIs\n3. **User Stories** — key user stories in \"As a [user], I want [goal], so that [benefit]\" format\n4. **Requirements** — functional and non-functional requirements, ordered by priority (P0/P1/P2)\n5. **Scope** — what is explicitly in scope and out of scope for this iteration\n6. **Design Considerations** — UX flows, edge cases, and accessibility notes\n7. **Technical Considerations** — dependencies, API changes, data model impacts\n8. **Risks & Mitigations** — potential blockers and how to address them\n9. **Timeline & Milestones** — suggested phasing and key checkpoints\n10. **Open Questions** — unresolved items that need stakeholder input\n\nFeature description / notes:\n\n{{clipboard}}\n\nWrite in clear, concise language. Favour specificity over vagueness — call out assumptions explicitly."
+    },
+    {
+      "id": "roadmap-prioritization",
+      "title": "Prioritize Roadmap",
+      "category": "product",
+      "version": 1,
+      "content": "You are a senior product manager responsible for roadmap planning. Analyze the following list of features or initiatives and produce a prioritized roadmap recommendation.\n\nFor each item, evaluate:\n\n1. **Impact** (1–5) — potential value to users and the business\n2. **Effort** (1–5) — engineering and design complexity\n3. **Confidence** (High / Medium / Low) — how certain we are about the impact estimate\n4. **Dependencies** — other features or systems this relies on\n5. **RICE Score** — calculate Reach × Impact × Confidence ÷ Effort\n\nThen provide:\n\n- **Recommended priority order** with reasoning\n- **Quick wins** — high impact, low effort items to tackle first\n- **Big bets** — high impact, high effort items worth investing in\n- **Deprioritize** — low impact items to defer or cut\n- **Suggested quarterly grouping** — which items fit together in a release\n\nFeatures / initiatives to evaluate:\n\n{{clipboard}}\n\nPresent the analysis as a table followed by your strategic recommendation. Flag any items that need more information before they can be properly assessed."
+    },
+    {
+      "id": "stakeholder-update",
+      "title": "Draft Stakeholder Update",
+      "category": "product",
+      "version": 1,
+      "content": "Draft a concise stakeholder update based on the following notes, meeting minutes, or raw context.\n\nStructure the update as:\n\n1. **Summary** — 2-3 sentence executive overview of progress and status\n2. **Key Accomplishments** — what shipped or was completed since the last update\n3. **In Progress** — current work with expected completion dates\n4. **Blockers & Risks** — issues that need attention or escalation, with proposed mitigations\n5. **Metrics Update** — relevant KPIs and how they've moved (if data is available)\n6. **Upcoming Milestones** — what's next and when\n7. **Decisions Needed** — any items requiring stakeholder input or approval\n\nRaw notes / context:\n\n{{clipboard}}\n\nWrite in a professional but direct tone. Lead with what matters most. Use bullet points for scannability. Keep the total update under 500 words."
+    },
+    {
+      "id": "swot-analysis",
+      "title": "SWOT Analysis",
+      "category": "product",
+      "version": 1,
+      "content": "Perform a thorough SWOT analysis based on the following product, company, or initiative description.\n\n**Strengths** (Internal, Positive)\n- What does the product do well?\n- What unique advantages does it have?\n- What resources or capabilities set it apart?\n\n**Weaknesses** (Internal, Negative)\n- Where does the product fall short?\n- What are the known gaps or limitations?\n- What do competitors do better?\n\n**Opportunities** (External, Positive)\n- What market trends could be leveraged?\n- What unmet user needs exist?\n- What partnerships or integrations could accelerate growth?\n\n**Threats** (External, Negative)\n- What competitive pressures exist?\n- What market or regulatory changes could hurt?\n- What technical or ecosystem risks are emerging?\n\nProduct / initiative description:\n\n{{clipboard}}\n\nFor each quadrant, provide 4-6 specific, actionable points (not generic statements). Then add a **Strategic Implications** section that connects the dots — how strengths can counter threats, how to address weaknesses to capture opportunities, etc."
+    },
+    {
+      "id": "user-persona",
+      "title": "Create User Persona",
+      "category": "product",
+      "version": 1,
+      "content": "Generate detailed user personas based on the following customer data, feedback, or product description.\n\nFor each persona, include:\n\n1. **Name & Role** — a realistic name and job title or role\n2. **Demographics** — age range, location, technical proficiency\n3. **Goals** — what they are trying to achieve with the product\n4. **Pain Points** — frustrations and challenges they face today\n5. **Behaviours** — how they currently solve their problems, tools they use\n6. **Motivations** — what drives their decisions (speed, cost, quality, etc.)\n7. **Objections** — reasons they might hesitate to adopt or continue using the product\n8. **Quote** — a fictional but realistic quote capturing their mindset\n9. **Scenario** — a brief day-in-the-life story showing how they would use the product\n\nSource data / product context:\n\n{{clipboard}}\n\nCreate 2-3 distinct personas that represent different segments. Make them specific enough to guide design and prioritization decisions — avoid generic descriptions."
+    },
+    {
+      "id": "competitor-analysis",
+      "title": "Competitor Analysis",
+      "category": "research",
+      "version": 1,
+      "content": "Conduct a comprehensive competitor analysis based on the following information about a competitor or set of competitors.\n\nFor each competitor, analyze:\n\n1. **Overview** — what they do, target market, company size, and stage\n2. **Product Strengths** — what they do well, key features, user experience highlights\n3. **Product Weaknesses** — gaps, common complaints, areas where users are underserved\n4. **Positioning & Messaging** — how they describe themselves, key value propositions, tone\n5. **Pricing Strategy** — pricing model, tiers, how it compares to the market\n6. **Growth Strategy** — recent launches, partnerships, marketing channels, hiring signals\n7. **Differentiation** — what makes them unique vs. other players in the space\n\nThen provide:\n\n- **Competitive comparison table** — side-by-side on key dimensions\n- **Opportunities** — gaps we can exploit or areas where we can differentiate\n- **Threats** — where they are strongest and gaining ground\n- **Recommended Actions** — 3-5 specific things to do based on this analysis\n\nCompetitor information:\n\n{{clipboard}}\n\nBe specific and evidence-based. Avoid generic statements like \"they have a good product.\" Instead, explain exactly what is good and why it matters."
+    },
+    {
+      "id": "market-sizing",
+      "title": "Market Sizing",
+      "category": "research",
+      "version": 1,
+      "content": "Estimate the market size for the following product, service, or market opportunity. Use both top-down and bottom-up approaches.\n\n**Top-Down Analysis:**\n1. **Total Addressable Market (TAM)** — the entire revenue opportunity if 100% market share\n2. **Serviceable Available Market (SAM)** — the segment you can realistically target\n3. **Serviceable Obtainable Market (SOM)** — the portion you can capture in the near term\n\n**Bottom-Up Analysis:**\n1. Estimate the number of potential customers in target segments\n2. Estimate average revenue per customer\n3. Calculate from the ground up\n\nFor each estimate, provide:\n- The methodology and assumptions used\n- Data sources or benchmarks referenced\n- Confidence level (high / medium / low)\n- Key variables that could shift the estimate significantly\n\nProduct / market description:\n\n{{clipboard}}\n\nPresent the analysis with clear math showing how you arrived at each number. Call out the biggest assumptions and suggest how to validate them. Include a range (conservative / base / optimistic) rather than a single point estimate."
+    },
+    {
+      "id": "market-trends",
+      "title": "Market Trend Analysis",
+      "category": "research",
+      "version": 1,
+      "content": "Analyze the following market, industry, or product area for key trends and emerging opportunities.\n\nCover these dimensions:\n\n1. **Technology Trends** — new technologies, platforms, or capabilities changing the landscape\n2. **Consumer Behaviour Shifts** — how user expectations and habits are evolving\n3. **Competitive Landscape Changes** — new entrants, consolidation, repositioning\n4. **Regulatory & Policy Developments** — new rules, standards, or compliance requirements\n5. **Economic Factors** — pricing pressures, funding trends, market growth/contraction\n6. **Adjacent Market Movements** — trends in related markets that could spill over\n\nFor each trend:\n- **Direction** — emerging, accelerating, peaking, or declining\n- **Timeframe** — when will this materially impact the market (6 months / 1 year / 2-3 years)\n- **Confidence** — how certain is this trend (high / medium / speculative)\n- **Implication** — what it means for product strategy\n\nMarket / industry context:\n\n{{clipboard}}\n\nConclude with a **Strategic Outlook** section: the 3 most important trends to act on now, and how to position for the next 12-18 months. Separate signal from noise — not every trend deserves a response."
+    },
+    {
+      "id": "product-market-fit",
+      "title": "Assess Product-Market Fit",
+      "category": "research",
+      "version": 1,
+      "content": "Evaluate the product-market fit for the following product based on the provided data, feedback, or context.\n\nAssess across these dimensions:\n\n1. **Sean Ellis Test** — if users couldn't use this product anymore, what percentage would be \"very disappointed\"? Estimate based on available signals.\n2. **Retention Signals** — are users coming back? What does engagement look like over time?\n3. **Organic Growth** — is there word-of-mouth, referrals, or organic demand?\n4. **Willingness to Pay** — are users paying? Would they pay more?\n5. **User Need Strength** — is this a must-have or nice-to-have? How were users solving this before?\n6. **Target Audience Clarity** — is there a well-defined segment that loves this, or is it lukewarm across the board?\n\nDeliver:\n\n- **PMF Score** — a qualitative assessment (Strong / Emerging / Weak / Not Yet)\n- **Evidence Summary** — the strongest signals for and against PMF\n- **Segment Analysis** — which user segments are closest to PMF\n- **Gaps to Close** — what needs to change to strengthen PMF\n- **Recommended Experiments** — 3-5 things to test next\n\nProduct data / context:\n\n{{clipboard}}\n\nBe honest in the assessment. Pre-PMF products need clarity, not optimism. Identify the fastest path to validation."
+    },
+    {
+      "id": "sentiment-analysis",
+      "title": "Consumer Sentiment Analysis",
+      "category": "research",
+      "version": 1,
+      "content": "Analyze the following data for shifts in consumer sentiment, emerging preferences, and potential dissatisfaction trends.\n\nExamine:\n\n1. **Overall Sentiment** — positive, negative, neutral breakdown with confidence\n2. **Trending Topics** — themes gaining traction (positive or negative)\n3. **Sentiment by Category** — break down sentiment by product area, feature, or topic\n4. **Emerging Preferences** — new behaviours or expectations appearing in the data\n5. **Risk Signals** — early indicators of dissatisfaction that could grow\n6. **Competitive Mentions** — how competitors are being discussed in context\n\nFor each insight:\n- Provide specific evidence from the source data\n- Note whether the trend is new, growing, stable, or declining\n- Assess potential business impact (high / medium / low)\n\nData to analyze:\n\n{{clipboard}}\n\nHighlight the 3-5 most important findings with clear \"so what\" implications — what should the product or marketing team do differently based on this data?"
+    },
+    {
+      "id": "user-feedback-synthesis",
+      "title": "Synthesize User Feedback",
+      "category": "research",
+      "version": 1,
+      "content": "Analyze the following user feedback and extract actionable insights. The feedback may come from customer reviews, support tickets, interviews, surveys, or forum discussions.\n\nProduce:\n\n1. **Top Pain Points** — the most frequent and impactful issues, ranked by severity and frequency\n2. **Feature Requests** — desired capabilities, grouped by theme\n3. **Positive Signals** — what users love and want to see more of\n4. **Unexpected Insights** — surprising patterns or needs that weren't anticipated\n5. **User Segments** — do different types of users have different concerns?\n6. **Sentiment Overview** — overall tone and how it breaks down by topic\n\nFor each finding:\n- Include supporting quotes from the feedback\n- Note the frequency (how many users mentioned it)\n- Assess the severity (blocking / frustrating / nice-to-have)\n- Suggest a potential product response\n\nUser feedback:\n\n{{clipboard}}\n\nPrioritize findings by a combination of frequency and impact. Distinguish between what users say they want and what the underlying need might actually be."
     },
     {
       "id": "create-readme",

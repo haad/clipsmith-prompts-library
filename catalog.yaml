@@ -1,4 +1,4 @@
-version: 3
+version: 4
 
 categories:
   - coding
@@ -6,3 +6,6 @@ categories:
   - analysis
   - creative
   - devops
+  - product
+  - research
+  - development
