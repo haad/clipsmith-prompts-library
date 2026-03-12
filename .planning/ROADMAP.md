@@ -47,8 +47,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Coding and writing prompts: 7 new coding + 6 new writing prompt files with frontmatter and {{clipboard}} bodies
-- [ ] 02-02-PLAN.md — Analysis and creative prompts: 5 analysis + 4 creative prompt files, catalog version bump to 2, full-suite 23-prompt validation
+- [x] 02-01-PLAN.md — Coding and writing prompts: 7 new coding + 6 new writing prompt files with frontmatter and {{clipboard}} bodies
+- [x] 02-02-PLAN.md — Analysis and creative prompts: 5 analysis + 4 creative prompt files, catalog version bump to 2, full-suite 23-prompt validation
 
 ### Phase 3: CI/CD and Deployment
 **Goal**: Every push to `main` that touches prompt source files automatically builds, validates, and publishes an updated `prompts.json` to the Flycut sync URL
@@ -59,7 +59,11 @@ Plans:
   2. The workflow completes successfully and the `gh-pages` branch contains a `prompts.json` that is fetchable at the `raw.githubusercontent.com` sync URL
   3. Triggering the workflow manually via the GitHub Actions UI (`workflow_dispatch`) runs the same build and deploy steps
   4. A push that introduces a duplicate prompt ID or missing required field causes the workflow to fail before deploying to `gh-pages`
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Build validation and CI workflow: add structural validation to build.sh, create GitHub Actions deploy.yml with path-filtered triggers and gh-pages deployment
+- [ ] 03-02-PLAN.md — Landing page: static index.html with category filters, search, copy-to-clipboard, dark/light mode, fetching prompts.json at runtime
 
 ### Phase 4: Documentation
 **Goal**: A contributor who has never seen the repository can add or update a prompt correctly without breaking the Flycut sync contract
@@ -81,5 +85,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Build Foundation | 2/2 | Complete   | 2026-03-11 |
 | 2. Seed Catalog | 2/2 | Complete   | 2026-03-12 |
-| 3. CI/CD and Deployment | 0/TBD | Not started | - |
+| 3. CI/CD and Deployment | 0/2 | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |
