@@ -25,8 +25,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **SEED-01**: 8 coding prompts: code-review-swift, explain-code, fix-bug, write-tests, refactor-code, add-error-handling, convert-to-async, optimize-performance
 - [x] **SEED-02**: 6 writing prompts: summarize-text, rewrite-formal, fix-grammar, simplify-language, write-email-reply, expand-bullet-points
-- [ ] **SEED-03**: 5 analysis prompts: analyze-data, compare-options, extract-action-items, identify-risks, create-summary-table
-- [ ] **SEED-04**: 4 creative prompts: brainstorm, write-story, generate-names, create-outline
+- [x] **SEED-03**: 5 analysis prompts: analyze-data, compare-options, extract-action-items, identify-risks, create-summary-table
+- [x] **SEED-04**: 4 creative prompts: brainstorm, write-story, generate-names, create-outline
 - [x] **SEED-05**: All 23 prompts have version 1, meaningful content, and correct frontmatter
 
 ### Build Pipeline
@@ -131,8 +131,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SCHM-02 | Phase 1 | Complete |
 | SEED-01 | Phase 2 | Complete |
 | SEED-02 | Phase 2 | Complete |
-| SEED-03 | Phase 2 | Pending |
-| SEED-04 | Phase 2 | Pending |
+| SEED-03 | Phase 2 | Complete |
+| SEED-04 | Phase 2 | Complete |
 | SEED-05 | Phase 2 | Complete |
 | CICD-01 | Phase 3 | Pending |
 | CICD-02 | Phase 3 | Pending |

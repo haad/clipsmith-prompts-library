@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 02-seed-catalog/02-01-PLAN.md
-last_updated: "2026-03-12T06:18:20.113Z"
+stopped_at: Completed 02-seed-catalog/02-02-PLAN.md
+last_updated: "2026-03-12T06:24:51.125Z"
 last_activity: 2026-03-11 — Phase 01 verified
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
   percent: 25
 ---
 
@@ -53,6 +53,7 @@ Progress: [██░░░░░░░░] 25%
 | Phase 01-build-foundation P01 | 2 | 2 tasks | 7 files |
 | Phase 01-build-foundation P02 | 3 | 2 tasks | 2 files |
 | Phase 02-seed-catalog P01 | 2 | 2 tasks | 14 files |
+| Phase 02-seed-catalog P02 | 3min | 2 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,8 @@ Recent decisions affecting current work:
 - [Phase 01-build-foundation]: || true required on grep field extractions under set -euo pipefail to emit proper error messages
 - [Phase 02-seed-catalog]: Prompt bodies use numbered bold-label lists (matching code-review-swift.md reference) for consistency across all categories
 - [Phase 02-seed-catalog]: Writing prompts include output format guidance to make prompts immediately actionable
+- [Phase 02-seed-catalog]: catalog.yaml version bumped to 2 to signal content-significant release (23 prompts complete)
+- [Phase 02-seed-catalog]: Alphabetical sort in prompts.json follows full file path: analysis < coding < creative < writing — consistent with build.sh find | sort behavior
 
 ### Pending Todos
 
@@ -81,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-12T06:18:20.110Z
-Stopped at: Completed 02-seed-catalog/02-01-PLAN.md
+Last session: 2026-03-12T06:24:51.122Z
+Stopped at: Completed 02-seed-catalog/02-02-PLAN.md
 Resume file: None
