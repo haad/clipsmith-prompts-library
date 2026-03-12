@@ -56,11 +56,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### CI/CD Pipeline
 
-- [ ] **CICD-01**: GitHub Actions workflow triggers on push to `main` when `prompts/**`, `catalog.yaml`, or `scripts/build.sh` change
-- [ ] **CICD-02**: Workflow supports manual trigger via `workflow_dispatch`
-- [ ] **CICD-03**: Workflow runs `build.sh`, validates output JSON, and deploys to `gh-pages` branch
-- [ ] **CICD-04**: Deployment uses `_deploy/` staging directory containing only `prompts.json` and a simple `index.html`
-- [ ] **CICD-05**: Workflow validates no duplicate IDs, all required fields present, and valid JSON structure
+- [x] **CICD-01**: GitHub Actions workflow triggers on push to `main` when `prompts/**`, `catalog.yaml`, or `scripts/build.sh` change
+- [x] **CICD-02**: Workflow supports manual trigger via `workflow_dispatch`
+- [x] **CICD-03**: Workflow runs `build.sh`, validates output JSON, and deploys to `gh-pages` branch
+- [x] **CICD-04**: Deployment uses `_deploy/` staging directory containing only `prompts.json` and a simple `index.html`
+- [x] **CICD-05**: Workflow validates no duplicate IDs, all required fields present, and valid JSON structure
 
 ### Documentation
 
@@ -134,11 +134,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEED-03 | Phase 2 | Complete |
 | SEED-04 | Phase 2 | Complete |
 | SEED-05 | Phase 2 | Complete |
-| CICD-01 | Phase 3 | Pending |
-| CICD-02 | Phase 3 | Pending |
-| CICD-03 | Phase 3 | Pending |
-| CICD-04 | Phase 3 | Pending |
-| CICD-05 | Phase 3 | Pending |
+| CICD-01 | Phase 3 | Complete |
+| CICD-02 | Phase 3 | Complete |
+| CICD-03 | Phase 3 | Complete |
+| CICD-04 | Phase 3 | Complete |
+| CICD-05 | Phase 3 | Complete |
 | DOCS-01 | Phase 4 | Pending |
 | DOCS-02 | Phase 4 | Pending |
 | DOCS-03 | Phase 4 | Pending |

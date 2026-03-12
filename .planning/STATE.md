@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 3 context gathered
-last_updated: "2026-03-12T08:32:20.388Z"
+stopped_at: Completed 03-ci-cd-and-deployment-01-PLAN.md
+last_updated: "2026-03-12T09:05:00.807Z"
 last_activity: 2026-03-11 — Phase 01 verified
 progress:
   total_phases: 4
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 6
+  completed_plans: 5
   percent: 100
 ---
 
@@ -54,6 +54,7 @@ Progress: [████████████████████] 4/4 pla
 | Phase 01-build-foundation P02 | 3 | 2 tasks | 2 files |
 | Phase 02-seed-catalog P01 | 2 | 2 tasks | 14 files |
 | Phase 02-seed-catalog P02 | 3min | 2 tasks | 11 files |
+| Phase 03-ci-cd-and-deployment P01 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,9 @@ Recent decisions affecting current work:
 - [Phase 02-seed-catalog]: Writing prompts include output format guidance to make prompts immediately actionable
 - [Phase 02-seed-catalog]: catalog.yaml version bumped to 2 to signal content-significant release (23 prompts complete)
 - [Phase 02-seed-catalog]: Alphabetical sort in prompts.json follows full file path: analysis < coding < creative < writing — consistent with build.sh find | sort behavior
+- [Phase 03-ci-cd-and-deployment]: jq -e structural checks used for prompts.json validation in build.sh — jq 1.6 does not support JSON Schema, structural checks sufficient
+- [Phase 03-ci-cd-and-deployment]: cancel-in-progress: false on deploy concurrency group — prevents partial gh-pages state from concurrent deploys
+- [Phase 03-ci-cd-and-deployment]: force_orphan: true on peaceiris deploy — gh-pages branch keeps single commit, no history accumulation
 
 ### Pending Todos
 
@@ -83,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-12T08:32:20.385Z
-Stopped at: Phase 3 context gathered
-Resume file: .planning/phases/03-ci-cd-and-deployment/03-CONTEXT.md
+Last session: 2026-03-12T09:05:00.804Z
+Stopped at: Completed 03-ci-cd-and-deployment-01-PLAN.md
+Resume file: None
