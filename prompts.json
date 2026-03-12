@@ -2,6 +2,41 @@
   "version": 1,
   "prompts": [
     {
+      "id": "analyze-data",
+      "title": "Analyze Data",
+      "category": "analysis",
+      "version": 1,
+      "content": "Analyze the following data and extract key insights. Focus on:\n\n1. **Trends** — identify patterns over time or across categories\n2. **Outliers** — flag anomalies or values that deviate significantly from the norm\n3. **Patterns** — surface recurring themes, correlations, or relationships\n4. **Evidence** — support each finding with specific data points from the source\n\nData to analyze:\n\n{{clipboard}}\n\nSummarize findings in order of significance, most impactful first."
+    },
+    {
+      "id": "compare-options",
+      "title": "Compare Options",
+      "category": "analysis",
+      "version": 1,
+      "content": "Compare the options presented below. For each option:\n\n1. **Pros** — list the key advantages and benefits\n2. **Cons** — list the drawbacks, limitations, and risks\n3. **Tradeoffs** — highlight the key tensions between competing factors\n4. **Recommendation** — identify the best option with clear justification\n\nOptions to compare:\n\n{{clipboard}}\n\nUse a structured format (table or numbered sections) for easy scanning and comparison."
+    },
+    {
+      "id": "create-summary-table",
+      "title": "Create Summary Table",
+      "category": "analysis",
+      "version": 1,
+      "content": "Convert the following text into a structured Markdown table. Focus on:\n\n1. **Dimensions** — identify the key attributes or criteria for comparison\n2. **Completeness** — include all relevant data points from the source text\n3. **Headers** — use clear, concise column headers that describe each dimension\n4. **Formatting** — align columns for readability; use dashes for missing values\n\nText to convert:\n\n{{clipboard}}\n\nOutput only the Markdown table, ready to paste into a document."
+    },
+    {
+      "id": "extract-action-items",
+      "title": "Extract Action Items",
+      "category": "analysis",
+      "version": 1,
+      "content": "Extract all action items from the following text. For each item identify:\n\n1. **What** — the specific task or deliverable required\n2. **Who** — the responsible person or team (if mentioned)\n3. **When** — the deadline or target date (if mentioned)\n4. **Priority** — relative urgency based on context clues\n\nText to extract from:\n\n{{clipboard}}\n\nList action items in priority order, with the most urgent items first."
+    },
+    {
+      "id": "identify-risks",
+      "title": "Identify Risks",
+      "category": "analysis",
+      "version": 1,
+      "content": "Identify the risks in the following plan or proposal. For each risk:\n\n1. **Description** — clearly state the risk and how it could materialize\n2. **Likelihood** — rate as high, medium, or low probability\n3. **Impact** — rate the potential damage as high, medium, or low\n4. **Mitigation** — suggest concrete strategies to reduce or eliminate the risk\n\nPlan or proposal to analyze:\n\n{{clipboard}}\n\nOrganize risks by severity (high impact + high likelihood first), then medium, then low."
+    },
+    {
       "id": "add-error-handling",
       "title": "Add Error Handling",
       "category": "coding",
@@ -56,6 +91,34 @@
       "category": "coding",
       "version": 1,
       "content": "Write comprehensive unit tests for this code. Cover:\n\n1. **Happy path** — the expected, normal-use cases\n2. **Edge cases** — empty input, boundary values, maximum and minimum inputs\n3. **Error conditions** — invalid input, failure modes, exception handling\n4. **Setup and teardown** — any required state initialization or cleanup\n\nCode to test:\n\n{{clipboard}}\n\nUse descriptive test names that explain what is being tested and the expected outcome. Include comments where the test intent is not immediately obvious."
+    },
+    {
+      "id": "brainstorm",
+      "title": "Brainstorm Ideas",
+      "category": "creative",
+      "version": 1,
+      "content": "Brainstorm ideas about the following topic. Focus on:\n\n1. **Diversity** — generate 10+ ideas ranging from conventional to unconventional\n2. **Descriptions** — include a one-sentence description for each idea\n3. **Grouping** — cluster related ideas together under a shared theme\n4. **Originality** — push beyond the obvious; include at least 3 unexpected angles\n\nTopic to brainstorm:\n\n{{clipboard}}\n\nList all ideas without filtering — quantity and variety matter more than polish at this stage."
+    },
+    {
+      "id": "create-outline",
+      "title": "Create Outline",
+      "category": "creative",
+      "version": 1,
+      "content": "Create a detailed outline for the following topic. Structure it as:\n\n1. **Hierarchy** — use standard outline format (I, A, 1, a) for clear nesting\n2. **Main sections** — include 3–5 top-level sections covering the topic fully\n3. **Subsections** — provide 2–4 subsections under each main section\n4. **Notes** — add a brief annotation on the key points to cover in each section\n\nTopic to outline:\n\n{{clipboard}}\n\nProduce a complete outline ready to use as a writing or presentation framework."
+    },
+    {
+      "id": "generate-names",
+      "title": "Generate Names",
+      "category": "creative",
+      "version": 1,
+      "content": "Generate name ideas for the described project, product, or feature. Provide 15+ options across these styles:\n\n1. **Descriptive** — names that clearly communicate the purpose or function\n2. **Abstract** — evocative names that suggest a feeling or concept\n3. **Compound words** — two words merged or hyphenated for a distinctive feel\n4. **Playful** — memorable, personality-driven names that stand out\n\nProject or feature to name:\n\n{{clipboard}}\n\nFor each name, include a one-sentence explanation of the reasoning and the associations it evokes."
+    },
+    {
+      "id": "write-story",
+      "title": "Write Story",
+      "category": "creative",
+      "version": 1,
+      "content": "Write a short story based on the following prompt or concept. Include:\n\n1. **Characters** — vivid, memorable protagonists with clear motivations\n2. **Setting** — a concrete, atmospheric sense of place and time\n3. **Arc** — a clear narrative structure with setup, conflict, and resolution\n4. **Length** — 500–800 words; tight and purposeful throughout\n\nStory prompt or concept:\n\n{{clipboard}}\n\nEnd with a satisfying conclusion that resonates with the story's central theme."
     },
     {
       "id": "expand-bullet-points",
