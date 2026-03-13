@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build --prefix web-ui)",
+      "Bash(pytest tests/:*)",
+      "Bash(ruff check src/:*)",
+      "Bash(ruff format src/:*)"
+    ]
+  }
+}

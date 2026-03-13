@@ -132,7 +132,7 @@
     }
 
     .header-inner {
-      max-width: 1280px;
+      max-width: 1600px;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -158,6 +158,25 @@
       color: var(--text-secondary);
     }
 
+    /* Nav links */
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-nav a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .header-nav a:hover {
+      color: var(--text-primary);
+    }
+
     /* Theme toggle */
     .theme-toggle {
       background-color: var(--toggle-btn-bg);
@@ -180,7 +199,7 @@
        Main layout
     ============================================================ */
     main {
-      max-width: 1280px;
+      max-width: 1600px;
       margin: 0 auto;
       padding: 24px;
     }
@@ -335,6 +354,12 @@
       }
     }
 
+    @media (min-width: 1400px) {
+      .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
     /* ============================================================
        Prompt card
     ============================================================ */
@@ -458,9 +483,13 @@
         <h1>Flycut Prompt Library</h1>
         <span class="header-subtitle" id="headerSubtitle">Loading prompts...</span>
       </div>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
-        <span id="themeIcon">&#9790;</span>
-      </button>
+      <div class="header-nav">
+        <a href="../Flycut/site/">Flycut</a>
+        <a href="https://github.com/haad/Flycut" target="_blank" rel="noopener">GitHub</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+          <span id="themeIcon">&#9790;</span>
+        </button>
+      </div>
     </div>
   </header>
 
