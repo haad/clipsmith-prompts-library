@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flycut Prompt Library</title>
+  <title>Clipsmith Prompts Library</title>
   <script>
     // Apply theme before DOM renders to prevent flash of wrong theme
     (function () {
@@ -480,12 +480,12 @@
   <header>
     <div class="header-inner">
       <div class="header-title">
-        <h1>Flycut Prompt Library</h1>
+        <h1>Clipsmith Prompts Library</h1>
         <span class="header-subtitle" id="headerSubtitle">Loading prompts...</span>
       </div>
       <div class="header-nav">
-        <a href="../Flycut/site/">Flycut</a>
-        <a href="https://github.com/haad/Flycut" target="_blank" rel="noopener">GitHub</a>
+        <a href="../Clipsmith/site/">Clipsmith</a>
+        <a href="https://github.com/haad/Clipsmith" target="_blank" rel="noopener">GitHub</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
           <span id="themeIcon">&#9790;</span>
         </button>
@@ -516,7 +516,7 @@
   </main>
 
   <footer>
-    <span>Flycut Prompt Library &mdash; curated prompts for Flycut clipboard manager</span>
+    <span>Clipsmith Prompts Library &mdash; curated prompts for Clipsmith clipboard manager</span>
   </footer>
 
   <script>
@@ -742,7 +742,7 @@
             .join(', ');
 
           document.getElementById('headerSubtitle').textContent =
-            total + ' curated prompts for Flycut clipboard manager';
+            total + ' curated prompts for Clipsmith clipboard manager';
 
           renderTabs(allPrompts);
           renderCards();
